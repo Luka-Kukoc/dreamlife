@@ -1,0 +1,15 @@
+@mixin mobile-overrides {
+  @media (max-width: $small-breakpoint) {
+    @content;
+  }
+}
+
+@mixin page-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+  width: 100%;
+}

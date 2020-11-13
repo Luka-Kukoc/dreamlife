@@ -1,0 +1,28 @@
+@import "constants";
+@import "mixins";
+
+// @import "header";
+@import "footer";
+
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+small,
+.small {
+  font-size: $font-size-small;
+}
+
+.content {
+  @include page-container;
+}
+
+.clamped {
+  margin: 0 auto;
+  max-width: 20rem;
+}
+
+.btn {
+  transition: none;
+}

@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Setup
+title:            Dream Life
+tagline:          Design your life, level up
+description:      Coworking and Events Space - Split, Croatia
+email:            info@dreamlife.dev
+image:            /static/images/social-large.png
+url:              "https://dreamlife.dev"
+baseurl:          ""
+plugins:
+
+# Social & Analytics
+# google_maps_key: AIzaSyBd-9fMSHCRNFb40JId8ghLXSMpgpqm3Ng
+# google_analytics: UA-168538837-1
+# social:
+#   facebook: https://www.facebook.com/The-Works-Split-113898687021269/
+#   instagram: https://www.instagram.com/theworkssplit/
+#   maps: https://g.page/TheWorksSplit
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed
