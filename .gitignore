@@ -105,3 +105,6 @@ dist
 
 # SCSS
 .sass-cache/
+
+# Jekyll
+_site/
