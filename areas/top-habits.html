@@ -1,0 +1,21 @@
+---
+layout: area
+title: Top Habits
+---
+
+{% for habit in site.data.habits %}
+<div class="card bg-light mb-3">
+  <div class="card-header">
+    Habit
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">
+      {{ habit.title }}
+    </h4>
+    <p class="card-text">
+      An explanation of why this is a good habit to practice.
+    </p>
+    <a href="#" class="card-link">More info</a>
+  </div>
+</div>
+{% endfor %}

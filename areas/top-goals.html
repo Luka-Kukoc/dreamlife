@@ -1,0 +1,25 @@
+---
+layout: area
+title: Top Goals
+---
+
+<div class="list-group">
+  {% for goal in site.data.goals %}
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">
+        {{ goal.title }}
+      </h5>
+      <small class="text-muted">
+        {{ goal.daysago }} days ago
+      </small>
+    </div>
+    <p class="mb-1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <small class="text-muted">
+      by {{ goal.by }}
+    </small>
+  </a>
+  {% endfor %}
+</div>

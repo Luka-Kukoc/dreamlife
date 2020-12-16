@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<div class="areas-header">
+  <h1 class="">
+    Areas
+  </h1>
+</div>
+
+<ul class="areas-menu">
+{% for node in site.pages %}
+  {% if node.layout == "area" %}
+  <li>
+    <a href="{{ node.url }}" class="btn btn-outline-primary">
+      {{ node.title }}
+      <i class="fas fa-angle-right float-right"></i>
+    </a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

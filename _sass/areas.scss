@@ -1,0 +1,54 @@
+$header-height: 80px;
+
+
+.areas-header {
+  box-shadow: 0px 2px 3px #888888;
+  height: $header-height;
+  margin-bottom: 3rem;
+  padding-top: 1.3rem;
+  text-align: center;
+}
+
+ul.areas-menu {
+  list-style-type: none;
+  margin: 0 1rem 3rem 1rem;
+  padding: 0;
+
+  li {
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: left;
+
+      i.fas {
+        font-size: 1.5rem;
+        margin-top: .6rem;
+      }
+    }
+  }
+}
+
+body.area {
+  padding-top: $header-height;
+
+  header {
+    background-color: #FFF;;
+    box-shadow: 0px 2px 3px #888888;
+    height: $header-height;
+    padding-top: 1.3rem;
+    text-align: center;
+
+    .backlink {
+      display: block;
+      font-size: 2rem;
+      margin: 0 1rem;
+    }
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
