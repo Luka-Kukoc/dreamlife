@@ -1,0 +1,12 @@
+
+.goal-page-wrapper{
+    text-align: center;
+    background-color: rgb(8, 29, 90);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.title{
+    color: #eb06ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
