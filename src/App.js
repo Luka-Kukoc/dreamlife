@@ -5,7 +5,7 @@ import LoginButton from "./components/LoginButton"
 
 function App() {
   
-  const { user, isAuthenticated, isLoading } = useAuth0()
+  const { isAuthenticated, isLoading } = useAuth0()
   
   if(isLoading){
     return(

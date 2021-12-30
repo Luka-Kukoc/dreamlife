@@ -18,10 +18,10 @@ export default function Goals() {
       <h1 className="title">Goals</h1>
       <Stack spacing={2} direction="column">
         <ThemeProvider theme={theme}>
-          <Button variant="outlined" color="neutral" size="large">
-            Life Goals
+          <Button variant="outlined" color="neutral" size="large" href="/addgoals">
+            Add Goals
           </Button>
-          <Button variant="outlined" color="neutral" size="large">
+          <Button variant="outlined" color="neutral" size="large" href="/activegoals">
             Active goals
           </Button>
           <Button variant="outlined" color="neutral" size="large">

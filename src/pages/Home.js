@@ -2,7 +2,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./Home.css"
-
+import { useNavigate } from 'react-router'
 
 export default function Homepage() {
   const theme = createTheme({
@@ -13,12 +13,12 @@ export default function Homepage() {
       },
     },
   });
-
+  let navigate = useNavigate()
   return (
     <div className="button-wrapper" style={{margin: 30, borderradius: 25 }}>
       <Stack spacing={2} direction="column">
         <ThemeProvider theme={theme}>
-          <Button variant="outlined" color="neutral" size="large" href="/goals">
+          <Button variant="outlined" color="neutral" size="large" onClick={()=>navigate("/goals")}>
             Goals
           </Button>
           <Button variant="outlined" color="neutral" size="large">

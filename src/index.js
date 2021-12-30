@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Goals from './pages/Goals';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import AddGoal from './pages/AddGoals';
+import ActiveGoals from './pages/ActiveGoals';
+import AppRouter from './router/AppRouter';
 import { Auth0Provider } from "@auth0/auth0-react"
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
@@ -18,14 +16,10 @@ ReactDOM.render(
   domain = {domain}
   clientId = {clientId}
   redirectUri={window.location.origin}>
-  <BrowserRouter>
+ 
   <React.StrictMode>
-  <Routes>
-     <Route path="/" element={<App />} />
-     <Route path="/goals" element={<Goals/>} />
-  </Routes>
+  <AppRouter/>
   </React.StrictMode>
-  </BrowserRouter>
   </Auth0Provider>,
   document.getElementById('root')
 );
