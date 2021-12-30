@@ -1,8 +1,9 @@
 import GoalForm from "../components/GoalForm"
 
-const AddGoal = () => {
+const AddGoal = ({history, goals, setGoals}) => {
     const handleOnSubmit = (goal) => {
-        console.log(goal)
+        setGoals([goal, ...goals])
+        history.push("/")
     }
     
     return (

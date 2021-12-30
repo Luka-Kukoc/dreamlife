@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Goals from './pages/Goals';
-import AddGoal from './pages/AddGoals';
-import ActiveGoals from './pages/ActiveGoals';
 import AppRouter from './router/AppRouter';
 import { Auth0Provider } from "@auth0/auth0-react"
 
