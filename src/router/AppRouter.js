@@ -4,9 +4,11 @@ import Login from "../Login";
 import AddGoal from "../pages/AddGoals";
 import ActiveGoals from "../pages/ActiveGoals";
 import useLocalStorage from "../hooks/useLocalStorage";
+import EditGoal from "../components/EditGoal";
+
 
 const AppRouter = () => {
-    const [goals, setGoals] = useLocalStorage("books", [])
+    const [goals, setGoals] = useLocalStorage("goals", [])
     
     return(
         <BrowserRouter>
@@ -14,10 +16,9 @@ const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/goals" element={<Goals/>} />
-                <Route render={(props) => (
-                    <AddGoal {...props} goals={goals} setGoals={setGoals}/>
-                )} path="/addgoals"/>
-                <Route path="/activegoals" element={<ActiveGoals/>}/>
+                <Route path="/addgoals" element={<AddGoal goals={goals} setGoals={setGoals}/>} />
+                <Route path="/activegoals" element={<ActiveGoals goals={goals} setGoals={setGoals}/>}/>
+                <Route path="/edit/:name" element={<EditGoal goals={goals} setGoals={setGoals}/>}/>
             </Routes>
         
         </BrowserRouter>
