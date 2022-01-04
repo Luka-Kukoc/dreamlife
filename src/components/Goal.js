@@ -1,6 +1,6 @@
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-
+import "./Goal.css"
 
 const Goal = ({name, desc, startDate, endDate, handleRemoveGoal}) =>{
     
