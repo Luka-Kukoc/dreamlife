@@ -5,7 +5,6 @@
     transition: 0.3s;
     border-radius: 5px; 
     background-color: rgb(161, 161, 161);
-    width: fit-content;
   }
 
   .goal-card:hover {

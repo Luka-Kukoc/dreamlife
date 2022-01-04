@@ -1,5 +1,6 @@
 import Goal from "../components/Goal"
 import _ from "lodash"
+import "./ActiveGoals.css"
 const ActiveGoals = ({goals, setGoals}) => {
     
     const handleRemoveGoal = (name) => {
