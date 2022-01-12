@@ -1,6 +1,8 @@
 import Goal from "../components/Goal"
 import _ from "lodash"
 import "./ActiveGoals.css"
+import Header from "../components/Header"
+
 const ActiveGoals = ({goals, setGoals}) => {
     
     const handleRemoveGoal = (name) => {
@@ -10,6 +12,7 @@ const ActiveGoals = ({goals, setGoals}) => {
     
     return (
         <>
+        <Header/>
         <div className="goal-list">{
             !_.isEmpty(goals) ? (
                 goals.map((goal) => (

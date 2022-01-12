@@ -2,6 +2,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./Goals.css";
+import Header from "../components/Header";
 
 export default function Goals() {
   const theme = createTheme({
@@ -14,6 +15,8 @@ export default function Goals() {
   });
 
   return (
+    <>
+    <Header/>
     <div className="goal-page-wrapper" style={{ margin: 30, borderradius: 25 }}>
       <h1 className="title">Goals</h1>
       <Stack spacing={2} direction="column">
@@ -35,6 +38,8 @@ export default function Goals() {
           </Button>
         </ThemeProvider>
       </Stack>
+      
     </div>
+    </>
   );
 }

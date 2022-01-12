@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./Home.css"
 import { useNavigate } from 'react-router'
-
+import Header from "../components/Header";
 export default function Homepage() {
   const theme = createTheme({
     palette: {
@@ -15,6 +15,8 @@ export default function Homepage() {
   });
   let navigate = useNavigate()
   return (
+    <>
+    <Header/>
     <div className="button-wrapper" style={{margin: 30, borderradius: 25 }}>
       <Stack spacing={2} direction="column">
         <ThemeProvider theme={theme}>
@@ -43,5 +45,6 @@ export default function Homepage() {
       
     
     </div>
+    </>
   );
 }

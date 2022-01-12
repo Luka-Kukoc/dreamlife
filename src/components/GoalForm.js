@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./GoalForm.css"
 
+
+
 const GoalForm = (props) => {
   const [goal, setGoal] = useState({
     name: props.goal ? props.goal.name : "",
