@@ -10,7 +10,7 @@ const EditGoal = ({ goals, setGoals }) => {
     const handleOnSubmit = (goal) => {
         const filteredGoals = goals.filter((goal) => goal.name !== name)
         setGoals([goal, ...filteredGoals])
-        navigate("/goals")
+        navigate("/dreamlife/goals")
     }
 
     return(

@@ -20,7 +20,7 @@ export default function Homepage() {
     <div className="button-wrapper" style={{margin: 30, borderradius: 25 }}>
       <Stack spacing={2} direction="column">
         <ThemeProvider theme={theme}>
-          <Button variant="outlined" color="neutral" size="large" onClick={()=>navigate("/goals")}>
+          <Button variant="outlined" color="neutral" size="large" onClick={()=>navigate("/dreamlife/goals")}>
             Goals
           </Button>
           <Button variant="outlined" color="neutral" size="large">

@@ -17,7 +17,7 @@ const Goal = ({name, desc, startDate, endDate, handleRemoveGoal}) =>{
                 <div>Start date: {startDate}</div>
                 <div>End date: {endDate}</div>
             </div>
-            <button onClick={() => navigate(`/edit/${name}`)}>Edit</button>
+            <button onClick={() => navigate(`/dreamlife/edit/${name}`)}>Edit</button>
             <button onClick={()=>handleRemoveGoal(name)}>Delete</button>
         </div>
         </div>

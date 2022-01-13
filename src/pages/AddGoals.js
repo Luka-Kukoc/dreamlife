@@ -5,7 +5,7 @@ const AddGoal = ({history, goals, setGoals}) => {
     const navigate = useNavigate()
     const handleOnSubmit = (goal) => {
         setGoals([goal, ...goals])
-        navigate("/")
+        navigate("/dreamlife")
     }
     
     return (
