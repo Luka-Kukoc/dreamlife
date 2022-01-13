@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4a25294.chunk.css",
-    "main.js": "/static/js/main.417e702d.chunk.js",
-    "main.js.map": "/static/js/main.417e702d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6e43b01f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6e43b01f.js.map",
-    "static/js/2.926d3cbe.chunk.js": "/static/js/2.926d3cbe.chunk.js",
-    "static/js/2.926d3cbe.chunk.js.map": "/static/js/2.926d3cbe.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a4a25294.chunk.css.map": "/static/css/main.a4a25294.chunk.css.map",
-    "static/js/2.926d3cbe.chunk.js.LICENSE.txt": "/static/js/2.926d3cbe.chunk.js.LICENSE.txt"
+    "main.css": "/dreamlife/static/css/main.a4a25294.chunk.css",
+    "main.js": "/dreamlife/static/js/main.417e702d.chunk.js",
+    "main.js.map": "/dreamlife/static/js/main.417e702d.chunk.js.map",
+    "runtime-main.js": "/dreamlife/static/js/runtime-main.d6a08b2d.js",
+    "runtime-main.js.map": "/dreamlife/static/js/runtime-main.d6a08b2d.js.map",
+    "static/js/2.926d3cbe.chunk.js": "/dreamlife/static/js/2.926d3cbe.chunk.js",
+    "static/js/2.926d3cbe.chunk.js.map": "/dreamlife/static/js/2.926d3cbe.chunk.js.map",
+    "index.html": "/dreamlife/index.html",
+    "static/css/main.a4a25294.chunk.css.map": "/dreamlife/static/css/main.a4a25294.chunk.css.map",
+    "static/js/2.926d3cbe.chunk.js.LICENSE.txt": "/dreamlife/static/js/2.926d3cbe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e43b01f.js",
+    "static/js/runtime-main.d6a08b2d.js",
     "static/js/2.926d3cbe.chunk.js",
     "static/css/main.a4a25294.chunk.css",
     "static/js/main.417e702d.chunk.js"
