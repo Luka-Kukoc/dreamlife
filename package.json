@@ -2,7 +2,7 @@
   "name": "goal-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dreamlife.dev/",
+  "homepage": "https://luka-kukoc.github.io/",
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
     "@emotion/react": "^11.7.1",
