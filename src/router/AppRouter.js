@@ -14,7 +14,7 @@ const AppRouter = () => {
         <BrowserRouter>
         
             <Routes>
-                <Route path="/" element={<Login />} />
+                <Route path="/dreamlife" element={<Login />} />
                 <Route path="/goals" element={<Goals/>} />
                 <Route path="/addgoals" element={<AddGoal goals={goals} setGoals={setGoals}/>} />
                 <Route path="/activegoals" element={<ActiveGoals goals={goals} setGoals={setGoals}/>}/>
