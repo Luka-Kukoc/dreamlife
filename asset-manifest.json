@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dreamlife/static/css/main.a4a25294.chunk.css",
-    "main.js": "/dreamlife/static/js/main.6731efa6.chunk.js",
-    "main.js.map": "/dreamlife/static/js/main.6731efa6.chunk.js.map",
+    "main.js": "/dreamlife/static/js/main.9bdf568e.chunk.js",
+    "main.js.map": "/dreamlife/static/js/main.9bdf568e.chunk.js.map",
     "runtime-main.js": "/dreamlife/static/js/runtime-main.d6a08b2d.js",
     "runtime-main.js.map": "/dreamlife/static/js/runtime-main.d6a08b2d.js.map",
     "static/js/2.44a9430a.chunk.js": "/dreamlife/static/js/2.44a9430a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d6a08b2d.js",
     "static/js/2.44a9430a.chunk.js",
     "static/css/main.a4a25294.chunk.css",
-    "static/js/main.6731efa6.chunk.js"
+    "static/js/main.9bdf568e.chunk.js"
   ]
 }
