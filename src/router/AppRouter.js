@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Goals from "../pages/Goals";
 import Login from "../Login";
 import AddGoal from "../pages/AddGoals";
@@ -11,7 +12,7 @@ const AppRouter = () => {
     const [goals, setGoals] = useLocalStorage("goals", [])
     
     return(
-        <BrowserRouter>
+        <HashRouter>
         
             <Routes>
                 <Route path="/dreamlife" element={<Homepage/>} />
@@ -22,7 +23,7 @@ const AppRouter = () => {
                 <Route path="/dreamlife/edit/:name" element={<EditGoal goals={goals} setGoals={setGoals}/>}/>
             </Routes>
         
-        </BrowserRouter>
+        </HashRouter>
         
     )
 }
