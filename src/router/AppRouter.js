@@ -17,8 +17,8 @@ const AppRouter = () => {
                 <Route path="/dreamlife" element={<Homepage/>} />
                 <Route path="/dreamlife/home" element={<Homepage/>}/>
                 <Route path="/dreamlife/goals" element={<Goals/>} />
-                <Route path="/dreamlife/addgoals" element={<AddGoal goals={goals} setGoals={setGoals}/>} />
-                <Route path="/dreamlife/activegoals" element={<ActiveGoals goals={goals} setGoals={setGoals}/>}/>
+                <Route path="/dreamlife/goals/addgoals" element={<AddGoal goals={goals} setGoals={setGoals}/>} />
+                <Route path="/dreamlife/goals/activegoals" element={<ActiveGoals goals={goals} setGoals={setGoals}/>}/>
                 <Route path="/dreamlife/edit/:name" element={<EditGoal goals={goals} setGoals={setGoals}/>}/>
             </Routes>
         
