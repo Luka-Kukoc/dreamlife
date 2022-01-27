@@ -1,11 +1,11 @@
-import "./Header.css"
+import './Header.css';
 
-function Header(){
-    return(
-        <div className="header-content">
-            <h1>Dreamlife</h1>
-        </div>
-    )
+function Header() {
+  return (
+    <div className="header-content">
+      <h1>Dreamlife</h1>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

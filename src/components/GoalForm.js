@@ -1,26 +1,25 @@
-import { useState } from "react";
-import "./GoalForm.css"
+import { useState } from 'react';
+import './GoalForm.css';
 
-
-
-const GoalForm = (props) => {
+function GoalForm(props) {
   const [goal, setGoal] = useState({
-    name: props.goal ? props.goal.name : "",
-    desc: props.goal ? props.goal.desc : "",
-    startDate: props.goal ? props.goal.startDate : "",
-    endDate: props.goal ? props.goal.endDate : "",
+    name: props.goal ? props.goal.name : '',
+    desc: props.goal ? props.goal.desc : '',
+    startDate: props.goal ? props.goal.startDate : '',
+    endDate: props.goal ? props.goal.endDate : '',
   });
 
-  const { name, desc, startDate, endDate } = goal;
+  const {
+    name, desc, startDate, endDate,
+  } = goal;
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
     const values = [name, desc, startDate, endDate];
-    
 
     const allFieldsFilled = values.every((field) => {
       const value = `${field}`.trim();
-      return value !== "" && value !== "0";
+      return value !== '' && value !== '0';
     });
 
     if (allFieldsFilled) {
@@ -32,21 +31,21 @@ const GoalForm = (props) => {
       };
       props.handleOnSubmit(goal);
     } else {
-      alert("Please fill out all fields.");
+      alert('Please fill out all fields.');
     }
   };
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     switch (name) {
-      case "desc":
-      /*if (value === "") {
+      case 'desc':
+      /* if (value === "") {
           setGoal((prevState) => ({
             ...prevState,
             [name]: value,
           }));
         }
-        break;*/
+        break; */
       default:
         setGoal((prevState) => ({
           ...prevState,
@@ -94,10 +93,10 @@ const GoalForm = (props) => {
             onChange={handleInputChange}
           />
         </label>
-       <input type="submit" value="Submit" /> 
+        <input type="submit" value="Submit" />
       </form>
     </div>
   );
-};
+}
 
 export default GoalForm;
