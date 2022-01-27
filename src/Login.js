@@ -28,9 +28,8 @@ function Login() {
     )
   }
 
-
   return (
-    navigate("/dreamlife/home")
+    navigate('/dreamlife/home')
   );
 }
 

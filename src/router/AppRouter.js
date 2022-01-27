@@ -1,5 +1,4 @@
 import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
 import Goals from "../pages/Goals";
 import Login from "../Login";
 import AddGoal from "../pages/AddGoals";
