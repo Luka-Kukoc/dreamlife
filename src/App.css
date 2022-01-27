@@ -1,16 +1,12 @@
 .App {
-  text-align: center;
-  margin-top: 0;
-  background-color: royalblue;
-}
-
-.App {
-  
-  min-height: 100vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: royalblue;
   color: white;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  margin-top: 0;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .login-wrapper{
