@@ -3,7 +3,9 @@ import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './Goals.css';
 import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom';
 
+const navigate = useNavigate()
 export default function Goals() {
   const theme = createTheme({
     palette: {
@@ -21,10 +23,10 @@ export default function Goals() {
         <h1 className="title">Goals</h1>
         <Stack spacing={2} direction="column">
           <ThemeProvider theme={theme}>
-            <Button variant="outlined" color="neutral" size="large" href="/dreamlife/addgoals">
+            <Button variant="outlined" color="neutral" size="large" onClick={() => navigate('/dreamlife/goals/addgoals')}>
               Add Goals
             </Button>
-            <Button variant="outlined" color="neutral" size="large" href="/dreamlife/activegoals">
+            <Button variant="outlined" color="neutral" size="large" onClick={() => navigate('/dreamlife/goals/activegoals')}>
               Active goals
             </Button>
             <Button variant="outlined" color="neutral" size="large">
